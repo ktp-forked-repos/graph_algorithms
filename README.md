@@ -1,7 +1,9 @@
 # graph_algorithms
 Various graph algorithms written in SWI Prolog.
 
-mst.pl finds the minimum spanning tree of a graph using DFS. The graph needs to provided in the form of an adjacency list. The name of the graph should be used as the predicate whose arguments give the adjacency lists. For example:
+mst.pl finds the minimum spanning tree of a graph using DFS. The graph is unweighted, and the graph must be connected. 
+
+The graph needs to provided in the form of an adjacency list. The name of the graph should be used as the predicate whose arguments give the adjacency lists. For example:
 
 graph_name(a,[b,c,d]).
 graph_name(b,[a,c,d]).
